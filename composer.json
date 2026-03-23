@@ -1,16 +1,16 @@
 {
-    "name": "spojenet/flexibee",
-    "description": "Metapackage alias for spojenet/abraflexi – PHP library for AbraFlexi (FlexiBee) accounting system.",
+    "name": "spojenet/abraflexi",
+    "description": "Metapackage alias for spojenet/flexibee – PHP library for FlexiBee (AbraFlexi) accounting system.",
     "type": "metapackage",
     "keywords": [
-        "abraflexi",
         "flexibee",
+        "abraflexi",
         "accounting",
         "php",
         "abra",
         "erp"
     ],
-    "homepage": "https://github.com/Spoje-NET/php-flexibee",
+    "homepage": "https://github.com/Spoje-NET/php-abraflexi",
     "license": "MIT",
     "authors": [
         {
@@ -21,10 +21,10 @@
         }
     ],
     "require": {
-        "spojenet/flexibee": "*"
+        "spojenet/abraflexi": "*"
     },
     "support": {
-        "issues": "https://github.com/Spoje-NET/php-flexibee/issues",
-        "source": "https://github.com/Spoje-NET/php-flexibee"
+        "issues": "https://github.com/Spoje-NET/php-abraflexi/issues",
+        "source": "https://github.com/Spoje-NET/php-abraflexi"
     }
 }

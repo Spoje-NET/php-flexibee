@@ -1,36 +1,36 @@
-# spojenet/abraflexi
+# spojenet/flexibee
 
-> **Composer alias metapackage** for [`spojenet/flexibee`](https://packagist.org/packages/spojenet/flexibee)
+> **Composer alias metapackage** for [`spojenet/abraflexi`](https://packagist.org/packages/spojenet/abraflexi)
 
-Tento balíček umožňuje instalovat PHP knihovnu pro práci s účetním systémem **AbraFlexi** (dříve FlexiBee) pod alternativním názvem:
-
-```bash
-composer require spojenet/abraflexi
-```
-
-Automaticky se nainstaluje `spojenet/flexibee` – skutečná knihovna. Oba názvy jsou plně zaměnitelné.
-
----
-
-## Instalace
+This package allows you to install the PHP library for working with the **FlexiBee** (formerly AbraFlexi) accounting system under an alternative name:
 
 ```bash
-composer require spojenet/abraflexi
-# nebo původní název:
 composer require spojenet/flexibee
 ```
 
-## Dokumentace
+The actual library `spojenet/abraflexi` will be installed automatically. Both names are fully interchangeable.
 
-Veškerá dokumentace, příklady a zdrojový kód jsou v hlavním repozitáři:
+---
 
-- 📦 Packagist: https://packagist.org/packages/spojenet/flexibee
-- 🐙 GitHub: https://github.com/Spoje-NET/php-abraflexi
+## Installation
 
-## Proč tento balíček?
+```bash
+composer require spojenet/flexibee
+# or the original name:
+composer require spojenet/abraflexi
+```
 
-Systém **FlexiBee** byl přejmenován na **AbraFlexi**. Tento metabalíček slouží jako alias, aby projekty odkazující na `spojenet/abraflexi` fungovaly bez nutnosti jakýchkoliv změn v kódu.
+## Documentation
 
-## Licence
+All documentation, examples, and source code are in the main repository:
+
+- 📦 Packagist: https://packagist.org/packages/spojenet/abraflexi
+- 🐙 GitHub: https://github.com/Spoje-NET/php-flexibee
+
+## Why this package?
+
+The **AbraFlexi** system was renamed to **FlexiBee**. This metapackage serves as an alias so that projects referencing `spojenet/flexibee` work without any code changes.
+
+## License
 
 MIT
