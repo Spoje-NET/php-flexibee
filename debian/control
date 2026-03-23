@@ -1,0 +1,17 @@
+Source: php-spojenet-flexibee
+Section: php
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.7.0
+Homepage: https://github.com/Spoje-NET/php-abraflexi
+Rules-Requires-Root: no
+#Vcs-Git: https://salsa.debian.org/debian/php-spojenet-flexibee.git
+#Vcs-Browser: https://salsa.debian.org/debian/php-spojenet-flexibee
+
+Package: php-spojenet-flexibee
+Architecture: all
+Depends: ${misc:Depends}, php-spojenet-abraflexi
+Description: Metapackage alias for Spoje-NET FlexiBee (AbraFlexi) PHP library
+ Provides a metapackage that depends on the actual PHP AbraFlexi
+ library package `php-spojenet-abraflexi` for easier installation.

@@ -1,0 +1,5 @@
+debian/.debhelper/
+debian/php-spojenet-flexibee/
+debian/debhelper-build-stamp
+debian/files
+debian/php-spojenet-flexibee.substvars
