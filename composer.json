@@ -1,6 +1,6 @@
 {
-    "name": "spojenet/abraflexi",
-    "description": "Metapackage alias for spojenet/flexibee – PHP library for FlexiBee (AbraFlexi) accounting system.",
+    "name": "spojenet/flexibee",
+    "description": "Metapackage alias – redirects to spojenet/abraflexi, the renamed PHP library for FlexiBee (AbraFlexi) accounting system.",
     "type": "metapackage",
     "keywords": [
         "flexibee",
@@ -21,7 +21,7 @@
         }
     ],
     "require": {
-        "spojenet/abraflexi": "*"
+        "spojenet/abraflexi": "^3.0"
     },
     "support": {
         "issues": "https://github.com/Spoje-NET/php-abraflexi/issues",
