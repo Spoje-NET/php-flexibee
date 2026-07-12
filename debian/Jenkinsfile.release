@@ -1,5 +1,8 @@
 #!groovy
 
+// debian:forky disabled: Forky is still unstable/research-only.
+// The full Debian package ecosystem is not yet available for Forky.
+// Re-enable once the stack builds cleanly for Forky.
 String[] distributions = ['debian:bookworm', 'debian:trixie', 'ubuntu:jammy', 'ubuntu:noble', 'ubuntu:resolute']
 
 String vendor = 'vitexsoftware'
@@ -66,7 +69,7 @@ distributions.each { distro ->
                         sh 'cd $WORKSPACE/dist/debian/ ; dpkg-scanpackages . /dev/null | gzip -9c > Packages.gz; cd $WORKSPACE'
                         sh 'echo "deb [trusted=yes] file://///$WORKSPACE/dist/debian/ ./" | sudo tee /etc/apt/sources.list.d/local.list'
                         sh 'sudo apt-get update --allow-releaseinfo-change'
-                        sh 'sudo DEBIAN_FRONTEND=noninteractive apt-get -y install pkg-php-tools multiflexi-sqlite || true'
+                        // sh 'sudo DEBIAN_FRONTEND=noninteractive apt-get -y install pkg-php-tools multiflexi-sqlite || true'
                         sh 'echo "INSTALATION"'
                         artifacts.each { deb_file ->
                             if (deb_file.endsWith('.deb')) {
