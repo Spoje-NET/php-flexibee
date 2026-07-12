@@ -10,7 +10,13 @@ String imagePrefix = 'multiflexi-'
 //String distroFamily = ''
 
 properties([
-    copyArtifactPermission('*')
+    copyArtifactPermission('*'),
+    buildBlocker(
+        useBuildBlocker: true,
+        blockLevel: 'GLOBAL',
+        scanQueueFor: 'ALL',
+        blockingJobs: '♻️ repo.mutiflexi.eu'
+    )
 ])
 node() {
     ansiColor('xterm') {
